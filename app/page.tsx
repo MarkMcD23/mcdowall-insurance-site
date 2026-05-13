@@ -645,6 +645,7 @@ export default function Home() {
               display: "flex",
               alignItems: "center",
               gap: "12px",
+              flexWrap: "wrap",
             }}
           >
             <img
@@ -670,6 +671,23 @@ export default function Home() {
           >
             480-300-0040
           </a>
+        </div>
+
+        <div
+          style={{
+            maxWidth: "1180px",
+            margin: "18px auto 0 auto",
+            paddingTop: "18px",
+            borderTop: "1px solid #e5e7eb",
+            color: "#64748b",
+            fontSize: "12px",
+            lineHeight: "1.6",
+          }}
+        >
+          Coverage is subject to policy terms, conditions, limits, exclusions,
+          and underwriting approval. Not all products are available in all
+          states. Insurance products are offered through McDowall Insurance
+          Services, Inc.
         </div>
       </footer>
     </main>
