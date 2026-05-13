@@ -1,5 +1,5 @@
 export default function Home() {
-  const calendlyLink = "https://calendly.com/markmcdowall-allstate/30min;
+  const calendlyLink = "https://calendly.com/markmcdowall-allstate/30min";
 
   return (
     <main>
