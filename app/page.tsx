@@ -82,12 +82,7 @@ export default function Home() {
             <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
               Book a Call
             </a>
-            <a
-              href="tel:4803000040"
-              style={{
-                color: "#001cff",
-              }}
-            >
+            <a href="tel:4803000040" style={{ color: "#001cff" }}>
               480-300-0040
             </a>
           </nav>
@@ -244,19 +239,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="services"
-        style={{
-          padding: "80px 20px",
-          background: "#f8fafc",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1180px",
-            margin: "0 auto",
-          }}
-        >
+      <section id="services" style={{ padding: "80px 20px", background: "#f8fafc" }}>
+        <div style={{ maxWidth: "1180px", margin: "0 auto" }}>
           <h2
             style={{
               fontSize: "42px",
@@ -333,13 +317,7 @@ export default function Home() {
                 >
                   {service.title}
                 </h3>
-                <p
-                  style={{
-                    color: "#64748b",
-                    lineHeight: "1.6",
-                    marginBottom: 0,
-                  }}
-                >
+                <p style={{ color: "#64748b", lineHeight: "1.6", marginBottom: 0 }}>
                   {service.text}
                 </p>
               </div>
@@ -348,13 +326,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="why-us"
-        style={{
-          padding: "85px 20px",
-          background: "#ffffff",
-        }}
-      >
+      <section id="why-us" style={{ padding: "85px 20px", background: "#ffffff" }}>
         <div
           style={{
             maxWidth: "1180px",
@@ -390,25 +362,14 @@ export default function Home() {
               Cheap insurance is great — until it skips the part you needed.
             </h2>
 
-            <p
-              style={{
-                color: "#475569",
-                fontSize: "18px",
-                lineHeight: "1.75",
-              }}
-            >
+            <p style={{ color: "#475569", fontSize: "18px", lineHeight: "1.75" }}>
               Our job is not to sell you the thinnest policy with the prettiest
               price tag. It is to help you understand your options, compare the
               details, and choose coverage that makes sense for your life.
             </p>
           </div>
 
-          <div
-            style={{
-              display: "grid",
-              gap: "18px",
-            }}
-          >
+          <div style={{ display: "grid", gap: "18px" }}>
             {[
               {
                 title: "Coverage-first conversations",
@@ -432,22 +393,10 @@ export default function Home() {
                   padding: "24px",
                 }}
               >
-                <h3
-                  style={{
-                    marginTop: 0,
-                    marginBottom: "8px",
-                    color: "#0b1220",
-                  }}
-                >
+                <h3 style={{ marginTop: 0, marginBottom: "8px", color: "#0b1220" }}>
                   {item.title}
                 </h3>
-                <p
-                  style={{
-                    margin: 0,
-                    color: "#64748b",
-                    lineHeight: "1.6",
-                  }}
-                >
+                <p style={{ margin: 0, color: "#64748b", lineHeight: "1.6" }}>
                   {item.text}
                 </p>
               </div>
@@ -465,19 +414,8 @@ export default function Home() {
           textAlign: "center",
         }}
       >
-        <div
-          style={{
-            maxWidth: "900px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "42px",
-              marginTop: 0,
-              marginBottom: "18px",
-            }}
-          >
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "42px", marginTop: 0, marginBottom: "18px" }}>
             Want a second opinion on your current insurance?
           </h2>
 
@@ -510,13 +448,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="contact"
-        style={{
-          padding: "80px 20px",
-          background: "#f8fafc",
-        }}
-      >
+      <section id="contact" style={{ padding: "80px 20px", background: "#f8fafc" }}>
         <div
           style={{
             maxWidth: "940px",
@@ -651,10 +583,7 @@ export default function Home() {
             <img
               src="/logo.jpg"
               alt="McDowall Insurance Services logo"
-              style={{
-                height: "50px",
-                width: "auto",
-              }}
+              style={{ height: "50px", width: "auto" }}
             />
             <span>
               © {new Date().getFullYear()} McDowall Insurance Services, Inc.
@@ -662,13 +591,7 @@ export default function Home() {
             </span>
           </div>
 
-          <a
-            href="tel:4803000040"
-            style={{
-              color: "#001cff",
-              fontWeight: "bold",
-            }}
-          >
+          <a href="tel:4803000040" style={{ color: "#001cff", fontWeight: "bold" }}>
             480-300-0040
           </a>
         </div>
@@ -685,11 +608,14 @@ export default function Home() {
           }}
         >
           Coverage is subject to policy terms, conditions, limits, exclusions,
-          and underwriting approval. Not all products are available in all
-          states. Insurance products are offered through McDowall Insurance
-          Services, Inc.
+          and underwriting approval. Products, features, discounts, and
+          availability may vary by insurer and state. McDowall Insurance
+          Services, Inc. is an insurance agency and may offer coverage through
+          Allstate and other carrier partners where appointed and licensed.
         </div>
       </footer>
     </main>
+  );
+}
   );
 }
