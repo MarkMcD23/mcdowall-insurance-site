@@ -61,7 +61,7 @@ export default function Home() {
                   marginTop: "4px",
                 }}
               >
-                Phoenix, Arizona Insurance Agency
+                Licensed in AZ, NV, TX, VA, OH & TN
               </div>
             </div>
           </a>
@@ -99,7 +99,7 @@ export default function Home() {
           background:
             "radial-gradient(circle at top right, rgba(0, 28, 255, 0.38), transparent 36%), linear-gradient(135deg, #050816 0%, #0b1220 58%, #111827 100%)",
           color: "white",
-          padding: "105px 20px",
+          padding: "95px 20px 105px 20px",
           textAlign: "center",
           position: "relative",
           overflow: "hidden",
@@ -107,12 +107,64 @@ export default function Home() {
       >
         <div
           style={{
-            maxWidth: "1000px",
+            maxWidth: "1050px",
             margin: "0 auto",
             position: "relative",
             zIndex: 1,
           }}
         >
+          <div
+            style={{
+              display: "inline-flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "12px",
+              background: "rgba(255,255,255,0.08)",
+              border: "1px solid rgba(255,255,255,0.18)",
+              borderRadius: "24px",
+              padding: "24px 30px",
+              marginBottom: "30px",
+              boxShadow: "0 18px 45px rgba(0,0,0,0.24)",
+              backdropFilter: "blur(8px)",
+            }}
+          >
+            <img
+              src="/logo.jpg"
+              alt="McDowall Insurance Services logo"
+              style={{
+                height: "130px",
+                width: "auto",
+                display: "block",
+                borderRadius: "14px",
+                background: "white",
+                padding: "8px",
+              }}
+            />
+
+            <div
+              style={{
+                fontSize: "28px",
+                fontWeight: "bold",
+                color: "#ffffff",
+                lineHeight: "1.15",
+              }}
+            >
+              McDowall Insurance Services, Inc.
+            </div>
+
+            <div
+              style={{
+                color: "#c7d2fe",
+                fontSize: "15px",
+                fontWeight: 700,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+              }}
+            >
+              Licensed in Arizona, Nevada, Texas, Virginia, Ohio & Tennessee
+            </div>
+          </div>
+
           <p
             style={{
               textTransform: "uppercase",
@@ -123,7 +175,7 @@ export default function Home() {
               marginBottom: "18px",
             }}
           >
-            Home • Auto • Renters • Condo • Commercial
+            Home • Auto • Renters • Life • Commercial
           </p>
 
           <h1
@@ -146,8 +198,8 @@ export default function Home() {
               color: "#dbeafe",
             }}
           >
-            We help Arizona families compare coverage, understand their options,
-            and avoid buying a policy based on price alone.
+            We help families compare coverage, understand their options, and
+            avoid buying a policy based on price alone.
           </p>
 
           <div
@@ -221,13 +273,14 @@ export default function Home() {
               textAlign: "center",
               color: "#64748b",
               fontSize: "18px",
-              maxWidth: "720px",
+              maxWidth: "760px",
               margin: "0 auto 48px auto",
               lineHeight: "1.6",
             }}
           >
-            Whether you are protecting your home, your car, your business, or
-            all of the above, we make the process simple and straightforward.
+            Whether you are protecting your home, your car, your family, your
+            business, or all of the above, we make the process simple and
+            straightforward.
           </p>
 
           <div
@@ -241,7 +294,7 @@ export default function Home() {
               "Home Insurance",
               "Auto Insurance",
               "Renters Insurance",
-              "Condo Insurance",
+              "Life Insurance",
               "Commercial Insurance",
             ].map((service) => (
               <div
@@ -352,8 +405,8 @@ export default function Home() {
                 text: "Home and auto bundles can create meaningful savings when the coverage is structured correctly.",
               },
               {
-                title: "Real agency support",
-                text: "You get help from people who know Arizona insurance, not a random call center reading from a script.",
+                title: "Multi-state support",
+                text: "We are licensed in Arizona, Nevada, Texas, Virginia, Ohio, and Tennessee.",
               },
             ].map((item) => (
               <div
@@ -590,7 +643,7 @@ export default function Home() {
             />
             <span>
               © {new Date().getFullYear()} McDowall Insurance Services, Inc.
-              Phoenix, Arizona.
+              Licensed in Arizona, Nevada, Texas, Virginia, Ohio, and Tennessee.
             </span>
           </div>
 
