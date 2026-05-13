@@ -508,7 +508,7 @@ export default function Home() {
                 display: "inline-block",
               }}
             >
-              Schedule a 30-Minute Call
+              Schedule a 15-Minute Call
             </a>
           </div>
         </div>
