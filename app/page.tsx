@@ -1,4 +1,6 @@
 export default function Home() {
+  const calendlyLink = "https://calendly.com/markmcdowall-allstate/30min;
+
   return (
     <main>
       <header
@@ -56,6 +58,9 @@ export default function Home() {
             <a href="#services">Services</a>
             <a href="#why-us">Why Us</a>
             <a href="#contact">Contact</a>
+            <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
+              Book a Call
+            </a>
             <a
               href="tel:6025844506"
               style={{
@@ -448,9 +453,9 @@ export default function Home() {
               marginBottom: "30px",
             }}
           >
-            Call, email, or send over your current policy. We’ll help you figure
-            out whether your coverage makes sense — and whether there is a
-            better option available.
+            Call, email, or schedule a quick call. We’ll help you figure out
+            whether your coverage makes sense — and whether there is a better
+            option available.
           </p>
 
           <div
@@ -487,6 +492,23 @@ export default function Home() {
               }}
             >
               Send Us Your Policy
+            </a>
+
+            <a
+              href={calendlyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                background: "#ffffff",
+                color: "#0d1b2a",
+                border: "1px solid #cbd5e1",
+                padding: "16px 28px",
+                borderRadius: "12px",
+                fontWeight: "bold",
+                display: "inline-block",
+              }}
+            >
+              Schedule a 15-Minute Call
             </a>
           </div>
         </div>
