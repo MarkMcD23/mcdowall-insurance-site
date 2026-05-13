@@ -67,7 +67,7 @@ export default function Home() {
                 color: "#1d4ed8",
               }}
             >
-              602-584-4506
+              480-300-0040
             </a>
           </nav>
         </div>
@@ -150,7 +150,7 @@ export default function Home() {
             </a>
 
             <a
-              href="tel:6025844506"
+              href="tel:4803000040"
               style={{
                 border: "2px solid rgba(255,255,255,0.75)",
                 color: "white",
@@ -467,7 +467,7 @@ export default function Home() {
             }}
           >
             <a
-              href="tel:6025844506"
+              href="tel:4803000040"
               style={{
                 background: "#1d4ed8",
                 color: "white",
@@ -477,7 +477,7 @@ export default function Home() {
                 display: "inline-block",
               }}
             >
-              Call 602-584-4506
+              Call 480-300-0040
             </a>
 
             <a
@@ -508,7 +508,7 @@ export default function Home() {
                 display: "inline-block",
               }}
             >
-              Schedule a 15-Minute Call
+              Schedule a 30-Minute Call
             </a>
           </div>
         </div>
