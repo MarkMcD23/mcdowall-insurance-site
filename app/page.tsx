@@ -62,7 +62,7 @@ export default function Home() {
               Book a Call
             </a>
             <a
-              href="tel:6025844506"
+              href="tel:4803000040"
               style={{
                 color: "#1d4ed8",
               }}
@@ -161,7 +161,7 @@ export default function Home() {
                 fontSize: "18px",
               }}
             >
-              Call 602-584-4506
+              Call 480-300-0040
             </a>
           </div>
         </div>
