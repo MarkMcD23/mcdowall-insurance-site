@@ -486,7 +486,7 @@ export default function Home() {
                 display: "inline-block",
               }}
             >
-              Email Your New Agent
+              Send Us Your Policy
             </a>
           </div>
         </div>
