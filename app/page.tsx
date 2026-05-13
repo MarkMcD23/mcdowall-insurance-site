@@ -291,14 +291,29 @@ export default function Home() {
             }}
           >
             {[
-              "Home Insurance",
-              "Auto Insurance",
-              "Renters Insurance",
-              "Life Insurance",
-              "Commercial Insurance",
+              {
+                title: "Home Insurance",
+                text: "Your home is probably the biggest thing you own, so this is not the place to play coverage roulette. We help you look at rebuild cost, deductibles, roof coverage, water damage, and the stuff people usually find out about too late.",
+              },
+              {
+                title: "Auto Insurance",
+                text: "Cheap auto insurance is easy to find. Good auto insurance takes a little more thought. We help compare liability limits, deductibles, uninsured motorist coverage, rental, roadside, and whether your policy actually makes sense for how you drive.",
+              },
+              {
+                title: "Renters Insurance",
+                text: "Renters insurance is usually inexpensive, but skipping it can get expensive fast. We help protect your belongings, liability, and temporary living expenses if life decides to throw a chair through the window.",
+              },
+              {
+                title: "Life Insurance",
+                text: "Life insurance is not fun to talk about, but neither is leaving people you love with a financial mess. We help make the conversation simple, practical, and focused on what your family would actually need.",
+              },
+              {
+                title: "Commercial Insurance",
+                text: "Business insurance should match the way your business actually operates, not just a generic checkbox. We help business owners think through liability, property, vehicles, employees, and the gaps that can turn into expensive problems.",
+              },
             ].map((service) => (
               <div
-                key={service}
+                key={service.title}
                 style={{
                   background: "white",
                   padding: "28px",
@@ -316,7 +331,7 @@ export default function Home() {
                     color: "#0b1220",
                   }}
                 >
-                  {service}
+                  {service.title}
                 </h3>
                 <p
                   style={{
@@ -325,8 +340,7 @@ export default function Home() {
                     marginBottom: 0,
                   }}
                 >
-                  Smart coverage options, clear explanations, and help comparing
-                  what actually matters before you make a decision.
+                  {service.text}
                 </p>
               </div>
             ))}
