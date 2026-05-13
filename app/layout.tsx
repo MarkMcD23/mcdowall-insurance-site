@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "McDowall Insurance Services | Phoenix Insurance Agency",
+  title: "McDowall Insurance Services | Home, Auto, Life & Business Insurance",
   description:
-    "Insurance written correctly, not just cheaply. Home, auto, renters, condo, and commercial insurance in Phoenix, Arizona.",
+    "McDowall Insurance Services helps families and business owners compare home, auto, renters, life, and commercial insurance in Arizona, Nevada, Texas, Virginia, Ohio, and Tennessee.",
 };
 
 export default function RootLayout({
