@@ -7,10 +7,11 @@ export default function Home() {
         style={{
           background: "#ffffff",
           borderBottom: "1px solid #e5e7eb",
-          padding: "18px 24px",
+          padding: "14px 24px",
           position: "sticky",
           top: 0,
           zIndex: 10,
+          boxShadow: "0 4px 14px rgba(15, 23, 42, 0.04)",
         }}
       >
         <div
@@ -24,26 +25,46 @@ export default function Home() {
             flexWrap: "wrap",
           }}
         >
-          <div>
-            <div
+          <a
+            href="#"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "14px",
+            }}
+          >
+            <img
+              src="/logo.jpg"
+              alt="McDowall Insurance Services logo"
               style={{
-                fontSize: "22px",
-                fontWeight: "bold",
-                color: "#0d1b2a",
+                height: "62px",
+                width: "auto",
+                display: "block",
               }}
-            >
-              McDowall Insurance Services
+            />
+
+            <div>
+              <div
+                style={{
+                  fontSize: "21px",
+                  fontWeight: "bold",
+                  color: "#0b1220",
+                  lineHeight: "1.1",
+                }}
+              >
+                McDowall Insurance Services, Inc.
+              </div>
+              <div
+                style={{
+                  fontSize: "14px",
+                  color: "#64748b",
+                  marginTop: "4px",
+                }}
+              >
+                Phoenix, Arizona Insurance Agency
+              </div>
             </div>
-            <div
-              style={{
-                fontSize: "14px",
-                color: "#64748b",
-                marginTop: "3px",
-              }}
-            >
-              Phoenix, Arizona Insurance Agency
-            </div>
-          </div>
+          </a>
 
           <nav
             style={{
@@ -52,7 +73,7 @@ export default function Home() {
               alignItems: "center",
               flexWrap: "wrap",
               fontSize: "15px",
-              fontWeight: 600,
+              fontWeight: 700,
             }}
           >
             <a href="#services">Services</a>
@@ -64,7 +85,7 @@ export default function Home() {
             <a
               href="tel:4803000040"
               style={{
-                color: "#1d4ed8",
+                color: "#001cff",
               }}
             >
               480-300-0040
@@ -76,16 +97,20 @@ export default function Home() {
       <section
         style={{
           background:
-            "linear-gradient(135deg, #0d1b2a 0%, #102a43 55%, #1d4ed8 100%)",
+            "radial-gradient(circle at top right, rgba(0, 28, 255, 0.38), transparent 36%), linear-gradient(135deg, #050816 0%, #0b1220 58%, #111827 100%)",
           color: "white",
-          padding: "95px 20px",
+          padding: "105px 20px",
           textAlign: "center",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
         <div
           style={{
             maxWidth: "1000px",
             margin: "0 auto",
+            position: "relative",
+            zIndex: 1,
           }}
         >
           <p
@@ -94,7 +119,7 @@ export default function Home() {
               letterSpacing: "0.14em",
               fontSize: "14px",
               fontWeight: "bold",
-              color: "#bfdbfe",
+              color: "#c7d2fe",
               marginBottom: "18px",
             }}
           >
@@ -137,13 +162,13 @@ export default function Home() {
               href="#contact"
               style={{
                 background: "#ffffff",
-                color: "#0d1b2a",
+                color: "#0b1220",
                 padding: "18px 34px",
-                borderRadius: "12px",
+                borderRadius: "14px",
                 fontWeight: "bold",
                 display: "inline-block",
                 fontSize: "18px",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.22)",
+                boxShadow: "0 8px 24px rgba(0,0,0,0.28)",
               }}
             >
               Have Us Check Your Rates
@@ -155,7 +180,7 @@ export default function Home() {
                 border: "2px solid rgba(255,255,255,0.75)",
                 color: "white",
                 padding: "16px 30px",
-                borderRadius: "12px",
+                borderRadius: "14px",
                 fontWeight: "bold",
                 display: "inline-block",
                 fontSize: "18px",
@@ -185,7 +210,7 @@ export default function Home() {
               fontSize: "42px",
               marginBottom: "14px",
               textAlign: "center",
-              color: "#0d1b2a",
+              color: "#0b1220",
             }}
           >
             Insurance We Can Help With
@@ -224,9 +249,10 @@ export default function Home() {
                 style={{
                   background: "white",
                   padding: "28px",
-                  borderRadius: "18px",
+                  borderRadius: "20px",
                   boxShadow: "0 8px 24px rgba(15, 23, 42, 0.08)",
                   border: "1px solid #e5e7eb",
+                  borderTop: "5px solid #001cff",
                 }}
               >
                 <h3
@@ -234,7 +260,7 @@ export default function Home() {
                     fontSize: "21px",
                     marginTop: 0,
                     marginBottom: "10px",
-                    color: "#0d1b2a",
+                    color: "#0b1220",
                   }}
                 >
                   {service}
@@ -275,7 +301,7 @@ export default function Home() {
           <div>
             <p
               style={{
-                color: "#1d4ed8",
+                color: "#001cff",
                 fontWeight: "bold",
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
@@ -289,7 +315,7 @@ export default function Home() {
               style={{
                 fontSize: "42px",
                 lineHeight: "1.15",
-                color: "#0d1b2a",
+                color: "#0b1220",
                 marginTop: 0,
                 marginBottom: "22px",
               }}
@@ -335,7 +361,7 @@ export default function Home() {
                 style={{
                   background: "#f8fafc",
                   border: "1px solid #e2e8f0",
-                  borderRadius: "16px",
+                  borderRadius: "18px",
                   padding: "24px",
                 }}
               >
@@ -343,7 +369,7 @@ export default function Home() {
                   style={{
                     marginTop: 0,
                     marginBottom: "8px",
-                    color: "#0d1b2a",
+                    color: "#0b1220",
                   }}
                 >
                   {item.title}
@@ -366,7 +392,8 @@ export default function Home() {
       <section
         style={{
           padding: "80px 20px",
-          background: "#0d1b2a",
+          background:
+            "linear-gradient(135deg, #050816 0%, #0b1220 68%, #001cff 100%)",
           color: "white",
           textAlign: "center",
         }}
@@ -402,9 +429,10 @@ export default function Home() {
           <a
             href="#contact"
             style={{
-              background: "#1d4ed8",
+              background: "#ffffff",
+              color: "#0b1220",
               padding: "18px 34px",
-              borderRadius: "12px",
+              borderRadius: "14px",
               fontWeight: "bold",
               display: "inline-block",
               fontSize: "18px",
@@ -424,20 +452,31 @@ export default function Home() {
       >
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: "940px",
             margin: "0 auto",
             background: "white",
-            borderRadius: "22px",
+            borderRadius: "24px",
             padding: "42px",
             boxShadow: "0 12px 32px rgba(15, 23, 42, 0.1)",
             border: "1px solid #e5e7eb",
             textAlign: "center",
           }}
         >
+          <img
+            src="/logo.jpg"
+            alt="McDowall Insurance Services logo"
+            style={{
+              height: "110px",
+              width: "auto",
+              display: "block",
+              margin: "0 auto 20px auto",
+            }}
+          />
+
           <h2
             style={{
               fontSize: "38px",
-              color: "#0d1b2a",
+              color: "#0b1220",
               marginTop: 0,
               marginBottom: "14px",
             }}
@@ -469,10 +508,10 @@ export default function Home() {
             <a
               href="tel:4803000040"
               style={{
-                background: "#1d4ed8",
+                background: "#001cff",
                 color: "white",
                 padding: "16px 28px",
-                borderRadius: "12px",
+                borderRadius: "14px",
                 fontWeight: "bold",
                 display: "inline-block",
               }}
@@ -483,10 +522,10 @@ export default function Home() {
             <a
               href="mailto:MarkMcDowall@Allstate.com"
               style={{
-                background: "#e0ecff",
-                color: "#1d4ed8",
+                background: "#e0e7ff",
+                color: "#001cff",
                 padding: "16px 28px",
-                borderRadius: "12px",
+                borderRadius: "14px",
                 fontWeight: "bold",
                 display: "inline-block",
               }}
@@ -500,10 +539,10 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{
                 background: "#ffffff",
-                color: "#0d1b2a",
+                color: "#0b1220",
                 border: "1px solid #cbd5e1",
                 padding: "16px 28px",
-                borderRadius: "12px",
+                borderRadius: "14px",
                 fontWeight: "bold",
                 display: "inline-block",
               }}
@@ -516,16 +555,55 @@ export default function Home() {
 
       <footer
         style={{
-          padding: "28px 20px",
+          padding: "30px 20px",
           background: "#ffffff",
           borderTop: "1px solid #e5e7eb",
-          textAlign: "center",
           color: "#64748b",
           fontSize: "14px",
         }}
       >
-        © {new Date().getFullYear()} McDowall Insurance Services. Phoenix,
-        Arizona.
+        <div
+          style={{
+            maxWidth: "1180px",
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: "20px",
+            flexWrap: "wrap",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
+            }}
+          >
+            <img
+              src="/logo.jpg"
+              alt="McDowall Insurance Services logo"
+              style={{
+                height: "50px",
+                width: "auto",
+              }}
+            />
+            <span>
+              © {new Date().getFullYear()} McDowall Insurance Services, Inc.
+              Phoenix, Arizona.
+            </span>
+          </div>
+
+          <a
+            href="tel:4803000040"
+            style={{
+              color: "#001cff",
+              fontWeight: "bold",
+            }}
+          >
+            480-300-0040
+          </a>
+        </div>
       </footer>
     </main>
   );
