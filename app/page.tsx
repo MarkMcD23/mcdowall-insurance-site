@@ -643,8 +643,8 @@ export default function Home() {
                 marginBottom: "24px",
               }}
             >
-              Tell us what you need help with. No novel required — unless your
-              current policy is a horror story.
+              Give us the basics and we’ll take it from there. No novel required
+              — unless your current policy is a horror story.
             </p>
 
             <input type="hidden" name="_subject" value="New Website Quote Request" />
@@ -657,6 +657,21 @@ export default function Home() {
                   name="name"
                   required
                   placeholder="Your name"
+                  style={{
+                    padding: "14px",
+                    borderRadius: "10px",
+                    border: "1px solid #cbd5e1",
+                    fontSize: "16px",
+                  }}
+                />
+              </label>
+
+              <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                Date of Birth
+                <input
+                  type="date"
+                  name="date_of_birth"
+                  required
                   style={{
                     padding: "14px",
                     borderRadius: "10px",
@@ -699,58 +714,133 @@ export default function Home() {
               </label>
 
               <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
-                State
-                <select
-                  name="state"
+                Street Address
+                <input
+                  type="text"
+                  name="street_address"
                   required
-                  defaultValue=""
+                  placeholder="Street address"
                   style={{
                     padding: "14px",
                     borderRadius: "10px",
                     border: "1px solid #cbd5e1",
                     fontSize: "16px",
-                    background: "white",
                   }}
-                >
-                  <option value="" disabled>
-                    Select your state
-                  </option>
-                  <option value="Arizona">Arizona</option>
-                  <option value="Nevada">Nevada</option>
-                  <option value="Texas">Texas</option>
-                  <option value="Virginia">Virginia</option>
-                  <option value="Ohio">Ohio</option>
-                  <option value="Tennessee">Tennessee</option>
-                  <option value="Other">Other</option>
-                </select>
+                />
               </label>
 
-              <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
-                What do you want quoted?
-                <select
-                  name="insurance_type"
-                  required
-                  defaultValue=""
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
+                  gap: "14px",
+                }}
+              >
+                <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                  City
+                  <input
+                    type="text"
+                    name="city"
+                    required
+                    placeholder="City"
+                    style={{
+                      padding: "14px",
+                      borderRadius: "10px",
+                      border: "1px solid #cbd5e1",
+                      fontSize: "16px",
+                    }}
+                  />
+                </label>
+
+                <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                  State
+                  <select
+                    name="state"
+                    required
+                    defaultValue=""
+                    style={{
+                      padding: "14px",
+                      borderRadius: "10px",
+                      border: "1px solid #cbd5e1",
+                      fontSize: "16px",
+                      background: "white",
+                    }}
+                  >
+                    <option value="" disabled>
+                      Select state
+                    </option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </label>
+
+                <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                  ZIP Code
+                  <input
+                    type="text"
+                    name="zip_code"
+                    required
+                    placeholder="ZIP"
+                    style={{
+                      padding: "14px",
+                      borderRadius: "10px",
+                      border: "1px solid #cbd5e1",
+                      fontSize: "16px",
+                    }}
+                  />
+                </label>
+              </div>
+
+              <div style={{ display: "grid", gap: "10px" }}>
+                <div style={{ fontWeight: 700 }}>What do you want quoted?</div>
+
+                <div
                   style={{
-                    padding: "14px",
-                    borderRadius: "10px",
-                    border: "1px solid #cbd5e1",
-                    fontSize: "16px",
-                    background: "white",
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(170px, 1fr))",
+                    gap: "10px",
                   }}
                 >
-                  <option value="" disabled>
-                    Select one
-                  </option>
-                  <option value="Home">Home</option>
-                  <option value="Auto">Auto</option>
-                  <option value="Home and Auto Bundle">Home and Auto Bundle</option>
-                  <option value="Renters">Renters</option>
-                  <option value="Life">Life</option>
-                  <option value="Commercial">Commercial</option>
-                  <option value="Not sure">Not sure</option>
-                </select>
-              </label>
+                  {[
+                    "Home Insurance",
+                    "Auto Insurance",
+                    "Home & Auto Bundle",
+                    "Renters Insurance",
+                    "Life Insurance",
+                    "Commercial Insurance",
+                  ].map((type) => (
+                    <label
+                      key={type}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        padding: "12px",
+                        border: "1px solid #cbd5e1",
+                        borderRadius: "10px",
+                        fontWeight: 600,
+                        background: "#f8fafc",
+                      }}
+                    >
+                      <input
+                        type="checkbox"
+                        name="insurance_types"
+                        value={type}
+                        style={{
+                          width: "18px",
+                          height: "18px",
+                        }}
+                      />
+                      {type}
+                    </label>
+                  ))}
+                </div>
+              </div>
 
               <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
                 Current carrier
@@ -811,6 +901,7 @@ export default function Home() {
               >
                 By submitting this form, you agree that McDowall Insurance
                 Services, Inc. may contact you about your insurance request.
+                Coverage is subject to underwriting approval and policy terms.
               </p>
             </div>
           </form>
