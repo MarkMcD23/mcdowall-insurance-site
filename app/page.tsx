@@ -558,7 +558,7 @@ export default function Home() {
               marginBottom: "14px",
             }}
           >
-            Ready to compare?
+            How Do You Want to Do This?
           </h2>
 
           <p
@@ -573,7 +573,8 @@ export default function Home() {
             }}
           >
             Send us your info, upload your current policy, schedule a quick call,
-            or just call us like it’s 2007. Whatever gets it done.
+            or just call us like it’s 2007. No wrong answer — except ignoring bad
+            insurance and hoping it fixes itself.
           </p>
 
           <div
