@@ -1,5 +1,6 @@
 export default function Home() {
   const calendlyLink = "https://calendly.com/markmcdowall-allstate/30min";
+  const formspreeEndpoint = "https://formspree.io/f/maqkwezq";
 
   return (
     <main>
@@ -504,104 +505,315 @@ export default function Home() {
       >
         <div
           style={{
-            maxWidth: "940px",
+            maxWidth: "1100px",
             margin: "0 auto",
-            background: "white",
-            borderRadius: "24px",
-            padding: "42px",
-            boxShadow: "0 12px 32px rgba(15, 23, 42, 0.1)",
-            border: "1px solid #e5e7eb",
-            textAlign: "center",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+            gap: "28px",
+            alignItems: "start",
           }}
         >
-          <img
-            src="/logo.jpg"
-            alt="McDowall Insurance Services logo"
-            style={{
-              height: "110px",
-              width: "auto",
-              display: "block",
-              margin: "0 auto 20px auto",
-            }}
-          />
-
-          <h2
-            style={{
-              fontSize: "38px",
-              color: "#0b1220",
-              marginTop: 0,
-              marginBottom: "14px",
-            }}
-          >
-            Ready to compare?
-          </h2>
-
-          <p
-            style={{
-              color: "#64748b",
-              fontSize: "18px",
-              lineHeight: "1.6",
-              marginBottom: "30px",
-            }}
-          >
-            Call, email, or schedule a quick call. We’ll help you figure out
-            whether your coverage makes sense — and whether there is a better
-            option available.
-          </p>
-
           <div
             style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "16px",
-              flexWrap: "wrap",
+              background: "white",
+              borderRadius: "24px",
+              padding: "42px",
+              boxShadow: "0 12px 32px rgba(15, 23, 42, 0.1)",
+              border: "1px solid #e5e7eb",
+              textAlign: "center",
             }}
           >
-            <a
-              href="tel:4803000040"
+            <img
+              src="/logo.jpg"
+              alt="McDowall Insurance Services logo"
               style={{
-                background: "#001cff",
-                color: "white",
-                padding: "16px 28px",
-                borderRadius: "14px",
-                fontWeight: "bold",
-                display: "inline-block",
+                height: "110px",
+                width: "auto",
+                display: "block",
+                margin: "0 auto 20px auto",
               }}
-            >
-              Call 480-300-0040
-            </a>
+            />
 
-            <a
-              href="mailto:MarkMcDowall@Allstate.com"
+            <h2
               style={{
-                background: "#e0e7ff",
-                color: "#001cff",
-                padding: "16px 28px",
-                borderRadius: "14px",
-                fontWeight: "bold",
-                display: "inline-block",
-              }}
-            >
-              Send Us Your Policy
-            </a>
-
-            <a
-              href={calendlyLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                background: "#ffffff",
+                fontSize: "38px",
                 color: "#0b1220",
-                border: "1px solid #cbd5e1",
-                padding: "16px 28px",
-                borderRadius: "14px",
-                fontWeight: "bold",
-                display: "inline-block",
+                marginTop: 0,
+                marginBottom: "14px",
               }}
             >
-              Schedule a 15-Minute Call
-            </a>
+              Ready to compare?
+            </h2>
+
+            <p
+              style={{
+                color: "#64748b",
+                fontSize: "18px",
+                lineHeight: "1.6",
+                marginBottom: "30px",
+              }}
+            >
+              Call, email, schedule a quick call, or send us your info through
+              the form. We’ll help you figure out whether your coverage makes
+              sense — and whether there is a better option available.
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "16px",
+                flexWrap: "wrap",
+              }}
+            >
+              <a
+                href="tel:4803000040"
+                style={{
+                  background: "#001cff",
+                  color: "white",
+                  padding: "16px 28px",
+                  borderRadius: "14px",
+                  fontWeight: "bold",
+                  display: "inline-block",
+                }}
+              >
+                Call 480-300-0040
+              </a>
+
+              <a
+                href="mailto:MarkMcDowall@Allstate.com"
+                style={{
+                  background: "#e0e7ff",
+                  color: "#001cff",
+                  padding: "16px 28px",
+                  borderRadius: "14px",
+                  fontWeight: "bold",
+                  display: "inline-block",
+                }}
+              >
+                Send Us Your Policy
+              </a>
+
+              <a
+                href={calendlyLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  background: "#ffffff",
+                  color: "#0b1220",
+                  border: "1px solid #cbd5e1",
+                  padding: "16px 28px",
+                  borderRadius: "14px",
+                  fontWeight: "bold",
+                  display: "inline-block",
+                }}
+              >
+                Schedule a 15-Minute Call
+              </a>
+            </div>
           </div>
+
+          <form
+            action={formspreeEndpoint}
+            method="POST"
+            style={{
+              background: "white",
+              borderRadius: "24px",
+              padding: "42px",
+              boxShadow: "0 12px 32px rgba(15, 23, 42, 0.1)",
+              border: "1px solid #e5e7eb",
+            }}
+          >
+            <h2
+              style={{
+                fontSize: "34px",
+                color: "#0b1220",
+                marginTop: 0,
+                marginBottom: "10px",
+              }}
+            >
+              Quick Quote Request
+            </h2>
+
+            <p
+              style={{
+                color: "#64748b",
+                fontSize: "16px",
+                lineHeight: "1.6",
+                marginBottom: "24px",
+              }}
+            >
+              Tell us what you need help with. No novel required — unless your
+              current policy is a horror story.
+            </p>
+
+            <input type="hidden" name="_subject" value="New Website Quote Request" />
+
+            <div style={{ display: "grid", gap: "16px" }}>
+              <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                Name
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Your name"
+                  style={{
+                    padding: "14px",
+                    borderRadius: "10px",
+                    border: "1px solid #cbd5e1",
+                    fontSize: "16px",
+                  }}
+                />
+              </label>
+
+              <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                Phone
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  placeholder="Best phone number"
+                  style={{
+                    padding: "14px",
+                    borderRadius: "10px",
+                    border: "1px solid #cbd5e1",
+                    fontSize: "16px",
+                  }}
+                />
+              </label>
+
+              <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                Email
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Best email"
+                  style={{
+                    padding: "14px",
+                    borderRadius: "10px",
+                    border: "1px solid #cbd5e1",
+                    fontSize: "16px",
+                  }}
+                />
+              </label>
+
+              <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                State
+                <select
+                  name="state"
+                  required
+                  defaultValue=""
+                  style={{
+                    padding: "14px",
+                    borderRadius: "10px",
+                    border: "1px solid #cbd5e1",
+                    fontSize: "16px",
+                    background: "white",
+                  }}
+                >
+                  <option value="" disabled>
+                    Select your state
+                  </option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Nevada">Nevada</option>
+                  <option value="Texas">Texas</option>
+                  <option value="Virginia">Virginia</option>
+                  <option value="Ohio">Ohio</option>
+                  <option value="Tennessee">Tennessee</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+
+              <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                What do you want quoted?
+                <select
+                  name="insurance_type"
+                  required
+                  defaultValue=""
+                  style={{
+                    padding: "14px",
+                    borderRadius: "10px",
+                    border: "1px solid #cbd5e1",
+                    fontSize: "16px",
+                    background: "white",
+                  }}
+                >
+                  <option value="" disabled>
+                    Select one
+                  </option>
+                  <option value="Home">Home</option>
+                  <option value="Auto">Auto</option>
+                  <option value="Home and Auto Bundle">Home and Auto Bundle</option>
+                  <option value="Renters">Renters</option>
+                  <option value="Life">Life</option>
+                  <option value="Commercial">Commercial</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </label>
+
+              <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                Current carrier
+                <input
+                  type="text"
+                  name="current_carrier"
+                  placeholder="Who are you with now?"
+                  style={{
+                    padding: "14px",
+                    borderRadius: "10px",
+                    border: "1px solid #cbd5e1",
+                    fontSize: "16px",
+                  }}
+                />
+              </label>
+
+              <label style={{ display: "grid", gap: "6px", fontWeight: 700 }}>
+                Notes
+                <textarea
+                  name="message"
+                  placeholder="Anything we should know?"
+                  rows={5}
+                  style={{
+                    padding: "14px",
+                    borderRadius: "10px",
+                    border: "1px solid #cbd5e1",
+                    fontSize: "16px",
+                    fontFamily: "inherit",
+                    resize: "vertical",
+                  }}
+                />
+              </label>
+
+              <button
+                type="submit"
+                style={{
+                  background: "#001cff",
+                  color: "white",
+                  padding: "16px 28px",
+                  borderRadius: "14px",
+                  fontWeight: "bold",
+                  fontSize: "17px",
+                  border: "none",
+                  cursor: "pointer",
+                  marginTop: "8px",
+                }}
+              >
+                Send My Quote Request
+              </button>
+
+              <p
+                style={{
+                  color: "#64748b",
+                  fontSize: "12px",
+                  lineHeight: "1.5",
+                  margin: "0",
+                }}
+              >
+                By submitting this form, you agree that McDowall Insurance
+                Services, Inc. may contact you about your insurance request.
+              </p>
+            </div>
+          </form>
         </div>
       </section>
 
