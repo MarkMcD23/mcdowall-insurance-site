@@ -1,6 +1,7 @@
 export default function Home() {
   const calendlyLink = "https://calendly.com/markmcdowall-allstate/30min";
   const quoteReviewLink = "https://form.jotform.com/261356695790167";
+  const googleReviewLink = "https://www.leavefeedback.app/tp/lK4lzp";
 
   return (
     <main>
@@ -79,6 +80,7 @@ export default function Home() {
           >
             <a href="#services">Services</a>
             <a href="#why-us">Why Us</a>
+            <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
             <a href={quoteReviewLink} target="_blank" rel="noopener noreferrer">
               Start Quote Review
@@ -465,6 +467,100 @@ export default function Home() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="reviews"
+        style={{
+          padding: "80px 20px",
+          background: "#f8fafc",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1180px",
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        >
+          <p
+            style={{
+              color: "#001cff",
+              fontWeight: "bold",
+              textTransform: "uppercase",
+              letterSpacing: "0.1em",
+              fontSize: "14px",
+              marginBottom: "12px",
+            }}
+          >
+            Client Reviews
+          </p>
+
+          <h2
+            style={{
+              fontSize: "42px",
+              color: "#0b1220",
+              marginTop: 0,
+              marginBottom: "18px",
+            }}
+          >
+            Had a good experience with us?
+          </h2>
+
+          <p
+            style={{
+              color: "#64748b",
+              fontSize: "18px",
+              lineHeight: "1.6",
+              maxWidth: "740px",
+              margin: "0 auto 34px auto",
+            }}
+          >
+            Reviews help local people find an agency that actually explains
+            coverage, answers the phone, and doesn’t treat insurance like a
+            vending machine.
+          </p>
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "16px",
+              flexWrap: "wrap",
+            }}
+          >
+            <a
+              href={googleReviewLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                background: "#001cff",
+                color: "white",
+                padding: "16px 28px",
+                borderRadius: "14px",
+                fontWeight: "bold",
+                display: "inline-block",
+              }}
+            >
+              Leave Us a Google Review
+            </a>
+
+            <a
+              href="#contact"
+              style={{
+                background: "#ffffff",
+                color: "#0b1220",
+                border: "1px solid #cbd5e1",
+                padding: "16px 28px",
+                borderRadius: "14px",
+                fontWeight: "bold",
+                display: "inline-block",
+              }}
+            >
+              Need Help First?
+            </a>
           </div>
         </div>
       </section>
