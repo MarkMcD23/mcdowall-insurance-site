@@ -506,7 +506,7 @@ export default function Home() {
               marginBottom: "18px",
             }}
           >
-            Had a good experience with us?
+            What Clients Say
           </h2>
 
           <p
@@ -515,13 +515,84 @@ export default function Home() {
               fontSize: "18px",
               lineHeight: "1.6",
               maxWidth: "740px",
-              margin: "0 auto 34px auto",
+              margin: "0 auto 40px auto",
             }}
           >
-            Reviews help local people find an agency that actually explains
-            coverage, answers the phone, and doesn’t treat insurance like a
-            vending machine.
+            Real feedback from people we’ve helped with coverage, pricing, and
+            making insurance a little less painful.
           </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "22px",
+              marginBottom: "34px",
+            }}
+          >
+            {[
+              {
+                name: "Jason J.",
+                review:
+                  "Mark McDowall at Allstate saved us thousands on our auto insurance renewal. He found us a much better rate by bundling our home and auto while maintaining the same coverage. Mark was attentive, responsive, and handled all the details. He truly earned our business.",
+              },
+              {
+                name: "Blaine K.",
+                review:
+                  "Kitty went above and beyond helping me resolve my homeowners and auto insurance issues. She is a credit to the Mark McDowall agency and Allstate insurance. You are very fortunate to have her on your team.",
+              },
+              {
+                name: "Monica M.",
+                review:
+                  "Leslie was very kind and helpful in getting a quote for me. No hassle. I would definitely recommend Allstate.",
+              },
+            ].map((item) => (
+              <div
+                key={item.name}
+                style={{
+                  background: "white",
+                  borderRadius: "20px",
+                  padding: "28px",
+                  textAlign: "left",
+                  border: "1px solid #e5e7eb",
+                  boxShadow: "0 8px 24px rgba(15, 23, 42, 0.08)",
+                }}
+              >
+                <div
+                  style={{
+                    color: "#facc15",
+                    fontSize: "24px",
+                    marginBottom: "14px",
+                    letterSpacing: "2px",
+                    textShadow: "0 1px 2px rgba(0,0,0,0.15)",
+                  }}
+                >
+                  ★★★★★
+                </div>
+
+                <p
+                  style={{
+                    color: "#475569",
+                    fontSize: "17px",
+                    lineHeight: "1.7",
+                    marginTop: 0,
+                    marginBottom: "18px",
+                  }}
+                >
+                  “{item.review}”
+                </p>
+
+                <div
+                  style={{
+                    fontWeight: "bold",
+                    color: "#0b1220",
+                  }}
+                >
+                  — {item.name}
+                </div>
+              </div>
+            ))}
+          </div>
 
           <div
             style={{
@@ -818,5 +889,7 @@ export default function Home() {
         </div>
       </footer>
     </main>
+  );
+}
   );
 }
