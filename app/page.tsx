@@ -1,3 +1,6 @@
+import { createElement } from "react";
+import Script from "next/script";
+
 export default function Home() {
   const calendlyLink = "https://calendly.com/markmcdowall-allstate/30min";
   const quoteReviewLink = "https://form.jotform.com/261356695790167";
@@ -888,8 +891,19 @@ export default function Home() {
           Allstate and other carrier partners where appointed and licensed.
         </div>
       </footer>
+
+      {/* LeadConnector floating chat widget */}
+      {createElement("chat-widget", {
+        "location-id": "PBceRUvLChpjdgarNG7C",
+        "legal-msg": "",
+        "agency-name": "LeadConnector",
+        "agency-website": "https://www.leadconnectorhq.com",
+      })}
+      <Script
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        strategy="afterInteractive"
+      />
     </main>
   );
 }
-  
-
